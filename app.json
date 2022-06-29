@@ -28,6 +28,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "Scoreboard for a game of duizenden",
+    "githubUrl": "https://github.com/Renszit/scoreboard"
   }
 }

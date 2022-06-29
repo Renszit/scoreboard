@@ -12,6 +12,7 @@ import {
 } from "react-native";
 import Button from "./Button";
 import StartScreen, { PlayerObject } from "./StartScreen";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 export default function App() {
   const [playersEntered, setPlayersEntered] = useState(false);

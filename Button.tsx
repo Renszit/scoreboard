@@ -6,6 +6,7 @@ import {
   PressableProps,
 } from "react-native";
 import React from "react";
+import { colors } from "./styles";
 
 type Props = PressableProps & {
   text: string | String;
@@ -17,7 +18,10 @@ const Button = (props: Props) => {
   return (
     <Pressable
       {...props}
-      style={[styles.button, { backgroundColor: color ? color : "#006992" }]}
+      style={[
+        styles.button,
+        { backgroundColor: color ? color : colors.Secondary },
+      ]}
     >
       <Text style={styles.textStyle}>{text}</Text>
     </Pressable>
@@ -28,7 +32,7 @@ const styles = StyleSheet.create({
   button: {
     width: 100,
     height: 40,
-    borderRadius: 5,
+    borderRadius: 4,
 
     alignItems: "center",
     justifyContent: "center",
@@ -36,7 +40,7 @@ const styles = StyleSheet.create({
   },
   textStyle: {
     fontWeight: "bold",
-    color: "#FFFF",
+    color: colors.Background,
   },
 });
 
